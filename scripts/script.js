@@ -7,11 +7,6 @@ function switchImages() {
 	topImg[0].classList.toggle("transparent");
 	topImg[1].classList.toggle("transparent");
 	setTimeout(changeSource, 1000);
-
-
-	// topImg[1].style.cssText = 'content:url(' + "'" + topImg[0].getAttribute('src') + "');";
-
-	// better stack images on each container and make top transparent with toggle class
 }
 
 function changeSource() {
@@ -24,7 +19,6 @@ function changeSource() {
 		topImg[0].setAttribute ('src', 'images/timanfaya1.jpg');
 		topImg[1].setAttribute ('src', 'images/timanfaya2.jpg');
 	}
-	setTimeout(function(){topImg[0].classList.toggle("transparent")}, 200);
-	setTimeout(function(){topImg[1].classList.toggle("transparent")}, 200);
+	setTimeout(function(){topImg[0].classList.toggle("transparent")}, 500);
+	setTimeout(function(){topImg[1].classList.toggle("transparent")}, 500);
 }
-
