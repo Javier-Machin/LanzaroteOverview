@@ -15,6 +15,11 @@ h1 {
 	margin-right: 150px;
 }
 
+a {
+	text-decoration: none;
+	opacity: 0.6;
+}
+
 .header {
 	text-align: center;
 	font-family: 'Righteous';
@@ -62,16 +67,14 @@ h1 {
 	display: inline-block;
 	width: 9%;
 	float: left;
-	height: 1000px;
-	
+	height: 1000px;	
 }
 
 .rightBar {
 	display: inline-block;
 	width: 9%;
 	float: right;
-	height: 1000px;
-	
+	height: 1000px;	
 }
 
 .topImgContainer {
@@ -86,22 +89,23 @@ h1 {
 	width: 60%;	
 	overflow:hidden;
 	margin: 1%;
+	z-index: 10;
 }
 
 .leftContainer {
 	display: inline-block;
-	width: 34%; 
+	width: 34%;	
 	overflow:hidden;
 	margin: 1%;
-
+	z-index: 10;
 }
 
-#rightImg, #leftImg {
+#rightImg, #leftImg, #bottomImg {
 	width: 100%;
 	transition: all 0.9s;
 }
 
-#rightImg:hover, #leftImg:hover {
+#rightImg:hover, #leftImg:hover, #bottomImg:hover {
 	transform: scale(1.1);
 }
 
@@ -120,9 +124,31 @@ h1 {
 }
 
 .mainText {
+	font-family: sans-serif;
 	font-size: 25px;
 	color: rgba(0, 0, 0, 0.8);
 	text-align: left;
 	display: inline-block;
 	width: 76%;
+}
+
+.contentImgContainer {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	width: 50%;
+	overflow: hidden;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+	font-family: 'Righteous';
+	font-size: 14px;
+	width: 100%;
+	height: 36px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+	border-top: 2px solid rgba(220, 220, 220, 0.6);
+	background-color: rgba(235, 235, 235, 0.6);
 }

@@ -1,7 +1,7 @@
 let topImgContainer = document.querySelector(".topImgContainer");
 let topImg = document.querySelectorAll(".topImgContainer .contentImg");
 
-setInterval(switchImages, 14000);
+setInterval(switchImages, 11000);
 
 function switchImages() {
 	topImg[0].classList.toggle("transparent");
