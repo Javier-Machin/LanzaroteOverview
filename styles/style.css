@@ -152,3 +152,16 @@ footer {
 	border-top: 2px solid rgba(220, 220, 220, 0.6);
 	background-color: rgba(235, 235, 235, 0.6);
 }
+
+.gridContainer {
+	display: inline-grid;
+	width: 72%;
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+	justify-content: center;
+}
+
+.gridItem  {
+	display: inline-block;
+	width: 100%;
+}
