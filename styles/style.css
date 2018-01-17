@@ -159,6 +159,7 @@ footer {
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 .gridItem  {

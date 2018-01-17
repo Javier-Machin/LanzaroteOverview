@@ -4,10 +4,10 @@ let images = ["./images/elgolfo1.jpg", "./images/timanfaya1.jpg", "./images/tima
 let galleryGrid = document.querySelector(".gridContainer");
 
 for (let i = 0; i < images.length; i++) {
-	let newImg = document.createElement("img");
-	newImg.classList.add('gridItem');
-	newImg.style.cssText = 'content: url(' + images[i] + ');';
-	galleryGrid.appendChild(newImg);
+	let newDiv = document.createElement("div");
+	newDiv.classList.add('gridItem');
+	newDiv.style.cssText = 'background: url(' + images[i] + ') no-repeat;' + 'background-size: contain;';
+	galleryGrid.appendChild(newDiv);
 } 
 
 galleryGrid.style.cssText = 'grid-template-columns: repeat(3, 280px);' + 'grid-template-rows: repeat(6, 160px);';
