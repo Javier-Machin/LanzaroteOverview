@@ -12,7 +12,7 @@ h1 {
 	font-size: 42px;
 	letter-spacing: 3px;
 	color: rgba(0, 0, 0, 0.8);
-	margin-right: 150px;
+	margin-right: 270px;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 
 .languages {
 	display: inline-block;
-	margin: 34px 0 0 10px;
+	margin: 34px 0 0 245px;
 	float: left;
 	opacity: 0.7;
 }
@@ -175,11 +175,11 @@ footer span {
     transition: 0.3s;
 }
 
-.gridItem:hover {
+.gridItem:hover, .gridItem:focus {
 	opacity: 0.7;
 }
 
-/* Gallery image full-size window */
+/* Gallery full-size image window */
 
 .modal {
 	text-align: center;
@@ -213,7 +213,7 @@ footer span {
 }
 
 
-/* close buttom from the gallery */
+/* Gallery zoom close buttom */
 
 .close {
     position: absolute;
