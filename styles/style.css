@@ -12,7 +12,7 @@ h1 {
 	font-size: 42px;
 	letter-spacing: 3px;
 	color: rgba(0, 0, 0, 0.8);
-	margin-right: 270px;
+	margin-right: 12px;
 }
 
 a {
@@ -33,63 +33,65 @@ a {
 
 .languages {
 	display: inline-block;
-	margin: 34px 0 0 245px;
-	float: left;
+	float:left;
 	opacity: 0.7;
+	margin-top: 30px;
+	margin-left: 17px;
 }
 
 .transparent {
 	opacity: 0.0;
 }
 
+#outerNav {
+	display: inline-block;
+	text-align: center;
+	width: 1200px;
+}
+
 #innerNav {
-	font-size: 20px;
-	color: rgba(0, 0, 0, 0.7);
+	font-size: 17px;
 	border-top: 2px solid;
 	border-bottom: 2px solid;
 	border-color: rgba(220, 220, 220, 0.6);
-	padding: 15px;
+	padding: 10px;
 }
 
-.navItem {
+#innerNav .navItem {
 	margin: 0 14px 0 14px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+
+#innerNav .navItem:hover, #innerNav .navItem:focus {
+	color: white;
+	background-color: black;
 }
 
 .mainContent {
 	font-family: 'Righteous';
 	text-align: center;
-	margin: 0 0 0 0;
-	width: 100%;
+	margin: auto;
+	width: 1200px;
 	height: 100%;
-}
-
-.leftBar {
-	display: inline-block;
-	width: 9%;
-	float: left;
-	height: 1000px;	
-}
-
-.rightBar {
-	display: inline-block;
-	width: 9%;
-	float: right;
-	height: 1000px;	
 }
 
 .topImgContainer {
 	display: inline-block;
 	overflow: hidden;
-	width: 78%;
+	width: 100%;
 	margin-top: 1%;
 }
 
 .rightContainer {
 	display: inline-block;
-	width: 60%;	
+	width: 61%;	
 	overflow:hidden;
 	margin: 1%;
-	z-index: 10;
 }
 
 .leftContainer {
@@ -97,7 +99,6 @@ a {
 	width: 34%;	
 	overflow:hidden;
 	margin: 1%;
-	z-index: 1;
 }
 
 #rightImg, #leftImg, #bottomImg {
@@ -111,16 +112,16 @@ a {
 
 .shortFact {
 	text-align: left;
-	font-size: 1.6vw;
+	font-size: 1.4vw;
 	color: rgba(0, 0, 0, 0.7);
 	position: absolute;
-	width: 25%;
-	height: 17%;
+	width: 22%;
+	height: 19%;
 	min-width: 310px;
-	margin-left: 35px;
+	margin-left: 20px;
 	border-right: 3px solid rgba(220, 220, 220, 0.6);
 	padding-right: 3px;
-	top: 165px;
+	top: 150px;
 }
 
 .mainText {
@@ -129,14 +130,14 @@ a {
 	color: rgba(0, 0, 0, 0.8);
 	text-align: left;
 	display: inline-block;
-	width: 76%;
+	width: 98%;
 }
 
 .contentImgContainer {
 	display: inline-block;
 	text-align: center;
 	margin-top: 20px;
-	width: 50%;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -223,11 +224,11 @@ footer span {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
