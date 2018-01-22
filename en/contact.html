@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Lanzarote Overview - IMAGES GALLERY</title>
+	<title>Lanzarote Overview - Contacto</title>
 	<link rel="stylesheet" href="../styles/normalize.css">
 	<link rel="stylesheet" href="../styles/style.css">
 </head>
@@ -14,9 +14,9 @@
 <div class="header">
 	<div class="navbar" id="outerNav">
 		<div class="languages">
-			<a href="../gallery.html"><img src="../icons/Spain-Flag.png" alt="Flag of Spain"></a>
-			<a href="gallery.html"><img src="../icons/UK-Flag.png" alt="Flag of United Kingdom"></a>
-			<a href="../de/gallery.html"><img src="../icons/Germany-Flag.png" alt="Flag of Germany"></a>
+			<a href="../contact.html"><img src="../icons/Spain-Flag.png" alt="Flag of Spain"></a>
+			<a href="contact.html"><img src="../icons/UK-Flag.png" alt="Flag of United Kingdom"></a>
+			<a href="../de/contact.html"><img src="../icons/Germany-Flag.png" alt="Flag of Germany"></a>
 		</div>
 		<h1>LANZAROTE<span> OVERVIEW</span></h1>
 	</div>	
@@ -24,18 +24,21 @@
 		<a href="index.html" class="navItem">HOME</a>
 		<a href="geology.html" class="navItem">GEOLOGY OF LANZAROTE</a>
 		<a href="climate.html" class="navItem">CLIMATE</a>
-		<a href="gallery.html" class="navItem" style="border-bottom: 2px solid rgba(0,0,0,0.5);">IMAGES GALLERY</a>
-		<a href="contact.html" class="navItem">CONTACT</a>
+		<a href="gallery.html" class="navItem">IMAGES GALLERY</a>
+		<a href="contact.html" class="navItem" style="border-bottom: 2px solid rgba(0,0,0,0.5);">CONTACT</a>
 	</div>
 </div>
 
 <div class="mainContent">
-	<div id="imageZoomWindow" class="modal">
-  		<span class="close">&times;</span> <!-- &times refers to the multiply character, the "X" -->
-  		<img class="modal-content" id="imageZoom">
+	<div class="mainText">
+		<div class="contentImgContainer">
+			<img class="contentImg" id="contactIMG" src="../images/contact.jpg" alt="Sky and building">
+		</div>
+		<p id="contactInfo">
+			If you have any question about the site, or are looking for a web developer &#128521 <br> click on show email and contact us.
+		</p>
+		<p id="showEmail">Show Email</p>
 	</div>
-
-	<div class="gridContainer"></div>
 </div>
 
 <footer>
@@ -45,8 +48,9 @@
 		licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/">Creative Commons</a>
 		<span id="creator">| © 2018 Javier M. Digital Design </span>  
 	</p>
+
 </footer>
 	
 </body>
-<script type="text/javascript" src="scripts/galleryScript.js"></script> 
+<script type="text/javascript" src="../scripts/contactScript.js"></script>
 </html>

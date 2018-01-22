@@ -5,6 +5,7 @@
 
 body {
 	min-width: 1200px;
+	height: 100%
 }
 
 h1 {
@@ -107,8 +108,29 @@ footer a {
 	transition: all 0.9s;
 }
 
-#rightImg:hover, #leftImg:hover, #bottomImg:hover {
+#rightImg:hover, #leftImg:hover, #bottomImg:hover, #contactIMG:hover {
 	transform: scale(1.1);
+}
+
+#contactIMG {
+	transition: all 0.9s;
+	width: 60%;
+}
+
+#contactInfo {
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+	border-top: 2px solid rgba(0,0,0,0.4);
+}
+
+#showEmail {
+	display:inline-block;
+	cursor: pointer;
+	font-size: 30px;
+	color: darkblue;
+	padding: 5px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
 }
 
 .shortFact {
@@ -144,7 +166,7 @@ footer a {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 	font-family: 'Righteous';
 	font-size: 14px;
 	width: 100%;
@@ -213,7 +235,6 @@ footer span {
 #imageZoom {
 	margin-top: 100px;
 }
-
 
 /* Gallery zoom close buttom */
 
