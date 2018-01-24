@@ -234,10 +234,6 @@ footer span {
     to {transform:scale(1)}
 }
 
-#imageZoom {
-	margin-top: 100px;
-}
-
 /* Gallery zoom close buttom */
 
 .close {
