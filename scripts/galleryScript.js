@@ -6,7 +6,6 @@ let images = ["./images/small/elgolfo1.jpg", "./images/small/timanfaya1.jpg", ".
 images.sort()
 
 const gallerymethod = (images) => {
-  console.log("ayy");
   let imageZoomWindow = document.getElementById('imageZoomWindow');
   let imageZoom = document.getElementById("imageZoom");
   let galleryGrid = document.querySelector(".gridContainer");
