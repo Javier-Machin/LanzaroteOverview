@@ -1,10 +1,3 @@
-let images = ["./images/small/elgolfo1.jpg", "./images/small/timanfaya1.jpg", "./images/small/timanfaya2.jpg", "./images/small/timanfaya3.jpg",
-              "./images/small/lagraciosa.jpg", "./images/small/lagraciosa2.jpg", "./images/small/cuevadelosverdes1.jpg", "./images/small/jameosdelagua1.jpg", 
-              "./images/small/timanfaya4.jpg", "./images/small/mar1.jpg", "./images/small/cesarmanrique1.jpg", "./images/small/cuevadelosverdes2.jpg", 
-              "./images/small/jameosdelagua2.jpg", "./images/small/jardindecactus1.jpg", "./images/small/jardindecactus2.jpg", "./images/small/miradorharia1.jpg", 
-              "./images/small/timanfaya5.jpg", "./images/small/timanfaya6.jpg", "./images/small/tinguaton1.jpg", "./images/small/PlayaDorada.jpg"]
-images.sort()
-
 const gallerymethod = (images) => {
   console.log("ayy");
   let imageZoomWindow = document.getElementById('imageZoomWindow');
@@ -43,4 +36,4 @@ const gallerymethod = (images) => {
   }
 };
 
-gallerymethod(images);
+export default gallerymethod
