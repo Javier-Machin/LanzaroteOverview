@@ -302,6 +302,8 @@ footer span {
 }
 
 .modal-content {
+  position: absolute;
+  top: 0;
 	text-align: center;
   display: block;
   width: 100%;
