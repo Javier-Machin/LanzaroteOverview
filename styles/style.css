@@ -61,7 +61,7 @@ footer a {
 }
 
 .languages {
-	display: inline-block;
+	display: flex;
 	opacity: 0.8;
 	cursor: pointer;
   justify-self: left;
@@ -91,6 +91,12 @@ footer a {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 	max-width: 1200px;
+}
+
+@media only screen and (max-width: 380px) {
+  #outerNav {
+    height: 80px;
+  }
 }
 
 #innerNav {
