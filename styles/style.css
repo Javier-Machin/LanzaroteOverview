@@ -56,7 +56,6 @@ footer a {
 .languages {
 	display: flex;
 	opacity: 0.8;
-	cursor: pointer;
   justify-self: left;
   margin-left: 5px;
   white-space: nowrap;
@@ -64,6 +63,21 @@ footer a {
 
 .languages img {
   padding: 3px;
+}
+
+.languages a {
+  cursor: pointer;
+  transition: scale 0.2s;
+  background-color: transparent;
+  border: 0;
+}
+
+.languages a:hover {
+  transform: scale(1.05);
+}
+
+.languages a:active {
+  transform: translateY(1px);
 }
 
 .transparent {
