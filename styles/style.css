@@ -1,19 +1,47 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
 @font-face {
 	font-family: 'Righteous';
 	src:url('../fonts/Righteous-Regular.ttf');
 }
 
-body {
-	min-width: 1200px;
-	height: 100%
-}
-
 h1 {
 	display: inline-block;
+  justify-self: center;
 	font-size: 42px;
 	letter-spacing: 3px;
 	color: rgba(0, 0, 0, 0.8);
-	margin-right: 12px;
+	margin: 0 auto;
+  white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 920px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    margin-left: 5px;
+  }
 }
 
 footer a {
@@ -34,11 +62,21 @@ footer a {
 
 .languages {
 	display: inline-block;
-	position: relative;
 	opacity: 0.8;
-	margin-top: 30px;
 	cursor: pointer;
-	right: 325px;
+  justify-self: left;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.languages img {
+  padding: 3px;
+}
+
+@media only screen and (max-width: 920px) {
+  .languages img {
+    width: 24px;
+  }
 }
 
 .transparent {
@@ -46,24 +84,46 @@ footer a {
 }
 
 #outerNav {
-	display: inline-block;
-	text-align: center;
-	width: 1200px;
+  margin: 0 auto;
+	display: grid;
+  height: 60px;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1200px;
 }
 
 #innerNav {
+  display: flex;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
 	font-size: 17px;
 	border-top: 2px solid;
 	border-bottom: 2px solid;
 	border-color: rgba(220, 220, 220, 0.6);
-	padding: 10px;
+}
+
+@media only screen and (max-width: 920px) {
+  #innerNav {
+    height: 38px; 
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #innerNav {
+    height: 36px; 
+    font-size: 10px;
+    padding: 3px;
+  }
 }
 
 #innerNav .navItem {
-	margin: 0 14px 0 14px;
+  padding: 10px;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.7);
-	padding: 9px;
 	border: 0px solid white;
 	transition: all 0.5s;
 }
@@ -77,31 +137,54 @@ footer a {
 .mainContent {
 	font-family: 'Righteous';
 	text-align: center;
-	margin: auto;
-	width: 1200px;
-	height: 100%;
-	min-height: 1260px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .topImgContainer {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	margin-top: 1%;
+	display: grid;
+  grid-template-areas:
+    "quo quo imgr imgr imgr"
+    "quo quo imgr imgr imgr"
+    "quo quo imgr imgr imgr"
+    "imgl imgl imgr imgr imgr"
+    "imgl imgl imgr imgr imgr";
+  padding: 10px;
 }
 
+@media only screen and (max-width: 920px) {
+  .topImgContainer {
+    grid-template-areas:
+      "imgr imgr imgr imgr imgr"
+      "imgr imgr imgr imgr imgr"
+      "imgr imgr imgr imgr imgr"
+      "imgl imgl imgl quo quo"
+      "imgl imgl imgl quo quo";
+    padding: 5px;
+  }
+}   
+
 .rightContainer {
-	display: inline-block;
-	width: 61%;	
-	overflow:hidden;
-	margin: 1%;
+  grid-area: imgr;
+  width: 99%;
+  height: 99%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .rightContainer {
+    height: 99%;
+  }
 }
 
 .leftContainer {
-	display: inline-block;
-	width: 34%;	
-	overflow:hidden;
-	margin: 1%;
+  grid-area: imgl;
+  width: 99%;
+  height: 99%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #rightImg, #leftImg, #bottomImg {
@@ -136,22 +219,52 @@ footer a {
 }
 
 .shortFact {
-	text-align: left;
-	font-size: 24px;
+  grid-area: "quo";
+  height: 100%;
+  width: 100%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	font-size: 22px;
 	color: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	width: 13%;
-	height: 10%;
-	min-width: 310px;
-	margin-left: 20px;
-	border-right: 3px solid rgba(220, 220, 220, 0.6);
-	padding-right: 24px;
-	top: 150px;
+  padding: 5px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .shortFact {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .shortFact {
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .shortFact {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .shortFact {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .shortFact {
+    margin-top: 0%;
+  }
+}
+
 
 .mainText {
 	font-family: sans-serif;
-	font-size: 25px;
+	font-size: 2rem;
 	color: rgba(0, 0, 0, 0.8);
 	text-align: left;
 	display: inline-block;
