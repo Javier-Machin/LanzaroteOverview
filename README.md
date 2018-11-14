@@ -1,4 +1,9 @@
-Site about the island where I live, with animated and interactive elements.
+Site about the island where I live. It was one of my first projects.
 ---------------------------------------------------------------------------
-Made without framework or external libraries.
-[View browser version](https://javier-machin.github.io/LanzaroteOverview/)
+
+[Check it out](https://javier-machin.github.io/LanzaroteOverview/)
+
+Página sobre la isla donde vivo. Uno de mis primeros proyectos.
+---------------------------------------------------------------------------
+
+[Pruébela](https://javier-machin.github.io/LanzaroteOverview/)
